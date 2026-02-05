@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Bài 1 Carousel</title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Bai1.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light border">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand" href="Lab1Index.html">
+            <img src="images/logo-energy-pilates.png" alt="Logo" class="logo">
+        </a>
+
+        <!-- TOGGLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Bài viết</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sự kiện</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Tài khoản
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                        <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Tiếng Việt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tiếng Anh</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- CAROUSEL -->
+<div class="container mt-4">
+
+    <div id="demoSlide" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- INDICATORS -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demoSlide" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demoSlide" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demoSlide" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demoSlide" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- SLIDES -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/banner3.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demoSlide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#demoSlide" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+</body>
+</html>

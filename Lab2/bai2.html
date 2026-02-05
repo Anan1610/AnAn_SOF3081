@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB 2 - Bài 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <h3 class="text-center text-primary mb-4">
+        FORM ĐĂNG KÝ & ĐĂNG NHẬP
+    </h3>
+
+    <div class="row">
+
+        <!--  FORM ĐĂNG KÝ  -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    ĐĂNG KÝ THÔNG TIN
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" placeholder="Nhập họ tên">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Giới tính</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender">
+                                <label class="form-check-label">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender">
+                                <label class="form-check-label">Nữ</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quốc tịch</label>
+                            <select class="form-select">
+                                <option>Việt Nam</option>
+                                <option>Mỹ</option>
+                                <option>Nhật Bản</option>
+                                <option>Hàn Quốc</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-info text-white">
+                            Đăng ký
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--  FORM ĐĂNG NHẬP  -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    ĐĂNG NHẬP
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                Ghi nhớ đăng nhập
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">
+                            Đăng nhập
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
